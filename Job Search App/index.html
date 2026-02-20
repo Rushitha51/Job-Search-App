@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Job Search App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+    <h1>Job Search App</h1>
+
+    <div class="search-box">
+        <input type="text" id="keyword" placeholder="Job title">
+        <input type="text" id="location" placeholder="Location">
+
+        <select id="category">
+            <option value="">All Categories</option>
+            <option value="IT">IT</option>
+            <option value="Design">Design</option>
+            <option value="Marketing">Marketing</option>
+        </select>
+
+        <button onclick="searchJobs()">Search</button>
+        <button onclick="toggleMode()">Dark Mode</button>
+    </div>
+
+    <h2>Available Jobs</h2>
+    <div id="jobsContainer"></div>
+
+    <h2>Saved Jobs (<span id="savedCount">0</span>)</h2>
+    <div id="savedJobs"></div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
